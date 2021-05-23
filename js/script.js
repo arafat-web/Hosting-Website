@@ -14,7 +14,9 @@ $(document).ready(function () {
             $(".navbar").css({ "background-color": "transparent", "box-shadow": "none" });
         }
     });
-
+    $(".navbar-toggler").click(function () {
+        $(".navbar-collapse").css("background-color", "rgba(255, 255, 255, 0.7)")
+    })
     $('#circles').polygonizr();
 
     startChangingText(['.Com', '.Net', '.Org'], 2);
