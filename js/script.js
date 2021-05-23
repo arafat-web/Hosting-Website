@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
     });
     $(".navbar-toggler").click(function () {
-        $(".navbar-collapse").css("background-color", "rgba(255, 255, 255, 0.7)")
+        $(".navbar-collapse").css("background-color", "rgba(0, 0, 0, 0.7)")
     })
     $('#circles').polygonizr();
 
