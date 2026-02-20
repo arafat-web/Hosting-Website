@@ -1,592 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- meta tags and title -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="author" content="Arafat Hossain Ar" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hosting webpage template</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOST.COM — Web Hosting & Domains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" ref="text/stylesheet"/>
+</head>
+<body>
 
-  <body>
-    <nav class="navbar  navbar-expand-lg fixed-top nav-area">
-      <a href="#" class="navbar-brand brand-name">
-        <span><b>HOST</b><u>.COM</u></span>
-      </a>
-      <button
-        class="navbar-toggler navbar-toggler-right"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavbar"
-      >
-        <span class=""> <i class="fa fa-bars"></i> </span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <!-- domain dropdown -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              data-toggle="dropdown"
-              >DOMAINS</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Search Domain</a>
-              <a class="dropdown-item" href="#"> Transfer Domain</a>
-              <a class="dropdown-item" href="#"> Premium Domain</a>
-              <a class="dropdown-item" href="#"> Domain Extension</a>
-              <a class="dropdown-item" href="#"> Domain Privacy</a>
-            </div>
-          </li>
+<nav>
+  <a href="#" class="logo">HOST<span>.COM</span></a>
+  <ul class="nav-links">
+    <li><a href="#">Domains ▾</a><div class="dropdown"><a href="#">Search Domain</a><a href="#">Transfer Domain</a><a href="#">Premium Domains</a><a href="#">Domain Privacy</a></div></li>
+    <li><a href="#">Hosting ▾</a><div class="dropdown"><a href="#">Shared Hosting</a><a href="#">WordPress Hosting</a><a href="#">VPS Hosting</a></div></li>
+    <li><a href="#">Website ▾</a><div class="dropdown"><a href="#">Website Builder</a><a href="#">Full Service Design</a></div></li>
+    <li><a href="#">Security ▾</a><div class="dropdown"><a href="#">SSL Certificates</a><a href="#">SiteLock Security</a><a href="#">DDoS Protection</a></div></li>
+    <li><a href="#">Support</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#">Log In</a>
+    <a href="#" class="btn-nav">Sign Up Free</a>
+  </div>
+</nav>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              data-toggle="dropdown"
-              >WEBSITE BUILDER</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Website Design</a>
-              <a class="dropdown-item" href="#"> Full Service Design</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              data-toggle="dropdown"
-              >WEB HOSTING</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Hosting Plans</a>
-              <a class="dropdown-item" href="#"> Wordpress Hosting</a>
-              <a class="dropdown-item" href="#"> WP Live</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbardrop"
-              data-toggle="dropdown"
-              >SECURITY</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">SSL Certificates</a>
-              <a class="dropdown-item" href="#"> Domain Securiy</a>
-              <a class="dropdown-item" href="#"> SiteLock Security</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us!</a>
-          </li>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="badge-dot"></span>99.9% Uptime Guaranteed</div>
+      <h1 class="hero-h1">Web Hosting Made<br/><span class="accent">Fast, Simple</span><br/>& Secure.</h1>
+      <p class="hero-sub">Get your website online in minutes. Free SSL, daily backups,<br/>LiteSpeed servers, and 24/7 expert support on every plan.</p>
+      <div class="hero-search-box">
+        <input type="text" placeholder="Search for your perfect domain…"/>
+        <button>Search Domain</button>
+      </div>
+      <div class="hero-tlds">
+        <span><strong>.COM</strong> $9.99/yr</span>
+        <span><strong>.NET</strong> $12.99/yr</span>
+        <span><strong>.ORG</strong> $9.99/yr</span>
+        <span><strong>.XYZ</strong> $1.50/yr</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#plans" class="btn-primary">View Hosting Plans</a>
+        <a href="#why" class="btn-outline-w">Why Host.com?</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <h3>🔒 Everything included, free</h3>
+        <ul class="feature-list">
+          <li><span class="check">✓</span> Free SSL Certificate (every plan)</li>
+          <li><span class="check">✓</span> Free Website Migration</li>
+          <li><span class="check">✓</span> 1-Click WordPress Install</li>
+          <li><span class="check">✓</span> Drag &amp; Drop Website Builder</li>
+          <li><span class="check">✓</span> Unlimited Email @ Your Domain</li>
+          <li><span class="check">✓</span> Daily Automatic Backups</li>
+          <li><span class="check">✓</span> CageFS + SecurePHP Security</li>
+          <li><span class="check">✓</span> DDoS &amp; Hack Protection</li>
         </ul>
-        <div class="dropdown-divider"></div>
-        <ul class="navbar-nav my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i
-                class="fa fa-sign-in"
-                style="padding-right: 5px;"
-                aria-hidden="true"
-              ></i
-              >Login</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i
-                class="fa fa-user"
-                style="padding-right: 5px;"
-                aria-hidden="true"
-              ></i
-              >Sign Up</a
-            >
-          </li>
+        <div class="hero-stats-row">
+          <div class="hstat"><div class="hstat-num">99.9%</div><div class="hstat-lbl">Uptime SLA</div></div>
+          <div class="hstat"><div class="hstat-num">24/7</div><div class="hstat-lbl">Live Support</div></div>
+          <div class="hstat"><div class="hstat-num">10k+</div><div class="hstat-lbl">Customers</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">🔒 Free SSL on All Plans</div>
+  <div class="trust-item">⚡ LiteSpeed HTTP/3 Servers</div>
+  <div class="trust-item">💬 24/7 Live Support</div>
+  <div class="trust-item">🔄 Free Website Migration</div>
+  <div class="trust-item">🛡️ DDoS Protection</div>
+  <div class="trust-item">📈 99.9% Uptime Guarantee</div>
+</div>
+
+<!-- PLANS -->
+<section class="section" id="plans">
+  <div class="section-inner">
+    <div class="plans-head reveal">
+      <div class="sec-tag">Hosting Plans</div>
+      <h2 class="sec-title">Choose the right plan for you</h2>
+      <p class="sec-sub">No setup fees. No surprises. Cancel anytime. Every plan includes free SSL &amp; unlimited email.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card reveal">
+        <div class="plan-name">LITE</div>
+        <div class="plan-title">Basic</div>
+        <div class="plan-tagline">Perfect for new &amp; small websites</div>
+        <div class="plan-price"><span class="plan-price-sup">$</span><span class="plan-price-num">7</span><span class="plan-price-per">&nbsp;/yr</span></div>
+        <button class="plan-btn plan-btn-outline">Get Started</button>
+        <hr class="plan-divider"/>
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="chk">✓</span> 512 MB SSD Storage</li>
+          <li class="plan-feat"><span class="chk">✓</span> 50 GB Bandwidth</li>
+          <li class="plan-feat"><span class="chk">✓</span> 1 Website</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Databases</li>
+          <li class="plan-feat"><span class="chk">✓</span> Free SSL Certificate</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Email</li>
         </ul>
       </div>
-    </nav>
-    <div class="banner-area">
-      <div id="circles"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="banner-text">
-              <h2 data-aos="zoom-in" data-aos-duration="1000">meet host.com</h2>
-              <h1
-                data-aos-delay="300"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                the best web hosting
-              </h1>
-              <p
-                data-aos-delay="500"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                Start your website today.<br /><i class="fa fa-headphones"> </i>
-                24/7 online support. <br />
-                <strong class="textchng">Domain<b id="changing"></b></strong>
-              </p>
+      <div class="plan-card reveal d1">
+        <div class="plan-name">SWIFT</div>
+        <div class="plan-title">Business</div>
+        <div class="plan-tagline">Built for growing businesses</div>
+        <div class="plan-price"><span class="plan-price-sup">$</span><span class="plan-price-num">1<small style="font-size:1.8rem">.30</small></span><span class="plan-price-per">&nbsp;/mo</span></div>
+        <button class="plan-btn plan-btn-outline">Get Started</button>
+        <hr class="plan-divider"/>
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="chk">✓</span> 1 GB SSD Storage</li>
+          <li class="plan-feat"><span class="chk">✓</span> 100 GB Bandwidth</li>
+          <li class="plan-feat"><span class="chk">✓</span> 3 Websites</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Databases</li>
+          <li class="plan-feat"><span class="chk">✓</span> Free SSL Certificate</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Email</li>
+        </ul>
+      </div>
+      <div class="plan-card popular reveal d2">
+        <div class="popular-ribbon">Most Popular</div>
+        <div class="plan-name">ULTRA</div>
+        <div class="plan-title">Professional</div>
+        <div class="plan-tagline">For resource-intensive sites</div>
+        <div class="plan-price"><span class="plan-price-sup">$</span><span class="plan-price-num">2<small style="font-size:1.8rem">.50</small></span><span class="plan-price-per">&nbsp;/mo</span></div>
+        <button class="plan-btn plan-btn-solid">Get Started</button>
+        <hr class="plan-divider"/>
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="chk">✓</span> 2 GB SSD Storage</li>
+          <li class="plan-feat"><span class="chk">✓</span> 200 GB Bandwidth</li>
+          <li class="plan-feat"><span class="chk">✓</span> 6 Websites</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Databases</li>
+          <li class="plan-feat"><span class="chk">✓</span> Free SSL Certificate</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Email</li>
+        </ul>
+      </div>
+      <div class="plan-card reveal d3">
+        <div class="plan-name">TURBO</div>
+        <div class="plan-title">Enterprise</div>
+        <div class="plan-tagline">Unlimited everything, zero limits</div>
+        <div class="plan-price"><span class="plan-price-sup">$</span><span class="plan-price-num">5</span><span class="plan-price-per">&nbsp;/mo</span></div>
+        <button class="plan-btn plan-btn-outline">Get Started</button>
+        <hr class="plan-divider"/>
+        <ul class="plan-feats">
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited SSD Storage</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Bandwidth</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Websites</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Databases</li>
+          <li class="plan-feat"><span class="chk">✓</span> Free SSL Certificate</li>
+          <li class="plan-feat"><span class="chk">✓</span> Unlimited Email</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-              <div class="input-group">
-                <input style="z-index: 1;"
-                  type="text"
-                  class="form-control"
-                  placeholder="Search Domain"
-                />
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="domain-text">
-                <span style="margin-right: 20px;"><b>.COM</b> only $9.99 </span>
-                <span><b>.NET</b> only $12.99</span>
-              </div>
-              <div style="z-index: 1;" class="getstarted">
-                <button style="z-index: 1;" class="btn btn-primary shadow-sm">Get Started</button>
-              </div>
-            </div>
-          </div>
+<!-- WHY -->
+<section class="section why-section" id="why">
+  <div class="section-inner">
+    <div class="why-layout">
+      <div class="why-left reveal">
+        <div class="sec-tag">Why Host.com</div>
+        <h2 class="sec-title">Hosting you can<br/>actually rely on.</h2>
+        <p class="sec-sub">Independently owned since 2016. Not a faceless corporation — a team obsessed with uptime, speed, and your success online.</p>
+        <div class="why-perks">
+          <div class="why-perk"><div class="perk-icon">⚡</div><div class="perk-body"><h4>LiteSpeed HTTP/3 Servers</h4><p>Dramatically faster page loads with the latest HTTP/3 protocol support.</p></div></div>
+          <div class="why-perk"><div class="perk-icon">🔒</div><div class="perk-body"><h4>Enterprise-Grade Security</h4><p>CageFS isolation, SecurePHP, KernelCare, custom firewall &amp; DDoS protection on every plan.</p></div></div>
+          <div class="why-perk"><div class="perk-icon">🚀</div><div class="perk-body"><h4>5-Minute Setup</h4><p>Free migration, 1-click app installer, and a drag-and-drop builder. Go live without a developer.</p></div></div>
+          <div class="why-perk"><div class="perk-icon">💬</div><div class="perk-body"><h4>Real 24/7 Support</h4><p>Talk to humans — not bots. Our team is on standby every day from 10 AM to 2:30 AM.</p></div></div>
         </div>
       </div>
-    </div>
-    <div class="firsttext">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            Web Hosting Services Crafted with Care<br />
-            We Have a Hosting Solution For You
-          </div>
-        </div>
+      <div class="why-right reveal d2">
+        <div class="stat-box"><div class="stat-big">99.9%</div><div class="stat-desc">Uptime SLA — guaranteed on every plan</div></div>
+        <div class="stat-box blue"><div class="stat-big">24/7</div><div class="stat-desc">Expert support, every day of the year</div></div>
+        <div class="stat-box navy"><div class="stat-big">10k+</div><div class="stat-desc">Happy customers worldwide</div></div>
+        <div class="stat-box"><div class="stat-big">Free</div><div class="stat-desc">SSL certificate included on every plan</div></div>
       </div>
     </div>
-    <div class="package-area">
-      <div class="container">
-        <b class="package-head"
-          >Choose a package
-          <hr
-        /></b>
-        <div class="row">
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <ul
-              class="list-group"
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <li class="list-group-item package-headtext">
-                <h2 class="text-primary">LITE <span>Basic</span></h2>
-                <h5>For new & small websites</h5>
-                <h6>Starting at</h6>
-                <h1>$7.00/Yr</h1>
-              </li>
-              <li class="list-group-item">512 MB SSD Storage</li>
-              <li class="list-group-item">50 GB Bandwidth</li>
-              <li class="list-group-item">Single Websites</li>
-              <li class="list-group-item">Unlimited Database</li>
-              <li class="list-group-item">Free SSL Certificate(s)</li>
-              <li class="list-group-item">Unlimited Email @ Your Domain</li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-primary btn-block">
-                  <b>Buy Lite Hosting</b>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <ul
-              class="list-group"
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <li class="list-group-item package-headtext">
-                <h2 class="text-primary">
-                  SWIFT
-                  <span style="background-color: rgb(56, 66, 75);"
-                    >Business</span
-                  >
-                </h2>
-                <h5>Built for Small Business</h5>
-                <h6>Starting at</h6>
-                <h1>$1.30/mo</h1>
-              </li>
-              <li class="list-group-item">1 GB SSD Storage</li>
-              <li class="list-group-item">100 GB Bandwidth</li>
-              <li class="list-group-item">Three Websites</li>
-              <li class="list-group-item">Unlimited Database</li>
-              <li class="list-group-item">Free SSL Certificate(s)</li>
-              <li class="list-group-item">Unlimited Email @ Your Domain</li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-primary btn-block">
-                  <b>Buy Swift Hosting</b>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <ul
-              class="list-group"
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <li class="list-group-item package-headtext">
-                <h2 class="text-primary">
-                  ULTRA
-                  <span style="background-color: rgb(170, 18, 157);"
-                    >Professional</span
-                  >
-                </h2>
-                <h5>For resource intensive sites</h5>
-                <h6>Starting at</h6>
-                <h1>$2.50/mo</h1>
-              </li>
-              <li class="list-group-item">2 GB SSD Storage</li>
-              <li class="list-group-item">200 GB Bandwidth</li>
-              <li class="list-group-item">Six Websites</li>
-              <li class="list-group-item">Unlimited Database</li>
-              <li class="list-group-item">Free SSL Certificate(s)</li>
-              <li class="list-group-item">Unlimited Email @ Your Domain</li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-primary btn-block">
-                  <b>Buy Ultra Hosting</b>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-6 col-sm-12">
-            <ul
-              class="list-group"
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <li class="list-group-item package-headtext">
-                <h2 class="text-primary">
-                  TURBO
-                  <span style="background-color: rgb(83, 112, 241);"
-                    >Enterprise</span
-                  >
-                </h2>
-                <h5>For resource intensive sites</h5>
-                <h6>Starting at</h6>
-                <h1>$5.00/mo</h1>
-              </li>
-              <li class="list-group-item">Unlimited SSD Storage</li>
-              <li class="list-group-item">Unlimited Bandwidth</li>
-              <li class="list-group-item">Unlimited Websites</li>
-              <li class="list-group-item">Unlimited Datbase</li>
-              <li class="list-group-item">Free SSL Certificate(s)</li>
-              <li class="list-group-item">Unlimited Email @ Your Domain</li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-primary btn-block">
-                  <b>Buy Turbo Hosting</b>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="domain-srch-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <form
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <label class="lbltext">Or Choose a Domain</label>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="example.com"
-                  id="demo"
-                  name="email"
-                />
-                <div class="input-group-append">
-                  <span class="input-group-text">Search</span>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div
-            class="col-sm-6 col-md-6 col-6"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <ul class="domain-value">
-              <li>.com $4.37</li>
-              <li>.org $9.99</li>
-              <li>.club $5.65</li>
-            </ul>
-          </div>
-          <div
-            class="col-sm-6 col-md-6 col-6"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <ul class="domain-value">
-              <li>.net $7.50</li>
-              <li>.info $2.00</li>
-              <li>.xyz $1.50</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="dis-area">
-      <svg
-        style="margin-bottom: -8px;"
-        xmlns="http://www.w3.org/2000/svg"
-        class="curve-container__curve curve-one bg-c-w100"
-        viewBox="0 0 1440 68"
-        enable-background="new 0 0 1440 68"
-      >
-        <path
-          d="m1622.3 1937.7c0 0-410.7 169.1-913.4 75.5-502.7-93.6-977.7 56.3-977.7 56.3v440h1891.1v-571.8"
-          fill="#E0E4E8 "
-          transform="translate(0-1977)"
-        ></path>
-      </svg>
-      <div
-        class="container-fluid"
-        style="background-color: #e0e4e8; margin-top: 2px;"
-      >
-        <div class="row">
-          <div
-            class="col-md-12 col-sm-12"
-            data-aos-delay="500"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h1>Why Host.Com is Different?</h1>
-            <span
-              >Let's Make Your Website Fast and Secure.Fast Web Hosting For the
-              best performance and faster loading times. FREE SSL, hack
-              protection, custom firewall, and DDoS protection to keep your
-              websites safe. !</span
-            >
-          </div>
-        </div>
-        <div class="row dis-art">
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-handshake-o"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <h3>Independently Owned</h3>
-            <p>
-              Intelwebhost provide most reasonable price domain hosting and
-              webdesing service . we provided our sevice since 2016 and our
-              terget customer Satisfaction with best sevice.
-            </p>
-          </div>
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-tachometer" aria-hidden="true"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <h3>Lite Speed Server</h3>
-            <p>
-              HTTP over QUIC is now called HTTP3, and LiteSpeed is the first top
-              operate an HTTP/3 server!.
-            </p>
-          </div>
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h3>Server & Security</h3>
-            <p>
-              Security and Privacy are our highest priority. All servers are
-              completely secured with CageFS and SecurePHP with the latest
-              patches installed with KernelCare.
-            </p>
-          </div>
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-suitcase" aria-hidden="true"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h3>Easy Set Up</h3>
-            <p>
-              Enjoy free setup with our free website migration service,1-click
-              app installer, and free drag & drop website builder.
-            </p>
-          </div>
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h3>24/7 Support</h3>
-            <p>
-              Our Dedicated support team is always available to make sure
-              hosting is not an issue for your business.
-            </p>
-          </div>
-          <div
-            class="col-sm-12 col-md-4"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <span><i class="fa fa-line-chart"></i></span>
-          </div>
-          <div
-            class="col-sm-12 col-md-8"
-            data-aos-delay="300"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <h3>100% Uptime Guaranteed</h3>
-            <p>
-              We guarantee it so you don't have to worry about it.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+</section>
 
-    <div class="help-area bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12">
-            <h1
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              Need Some Help?
-            </h1>
-            <p data-aos-delay="300" data-aos="zoom-in" data-aos-duration="1000">
-              What can we do for you? Intelwebhost is here to meet your needs.
-              <br />
-              Customer Support Chat: Every Day 10.00AM To 2.30AM
-            </p>
-            <button
-              data-aos-delay="300"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              type="button"
-              class="btn btn-outline-light"
-            >
-              Send us an Email
-            </button>
+<!-- DOMAINS -->
+<section class="section domain-section" id="domains">
+  <div class="section-inner">
+    <div class="domain-layout">
+      <div class="domain-left reveal">
+        <div class="sec-tag" style="background:rgba(56,189,248,0.15);color:var(--cyan)">Domain Registration</div>
+        <h2 class="sec-title">Find your perfect domain name</h2>
+        <p class="sec-sub">Search hundreds of extensions. Transfer or register in seconds.</p>
+        <div class="domain-search-form">
+          <label>Search for a Domain</label>
+          <div class="domain-input-row">
+            <input type="text" placeholder="yourbusiness.com"/>
+            <button>Search</button>
           </div>
         </div>
-      </div>
-    </div>
-
-    
-    <div class="footer bg-dark">
-      <div class="conainter" >
-        <div class="row">
-          <div class="col-6 col-md-6 col-sm-6">
-            <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Affiliate Program</a></li>
-              <li><a href="">Contact Us</a></li>
-              <li><a href="">&copy;Arafat</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-6 col-sm-6">
-            <ul>
-              <li><a href="">Support</a></li>
-              <li><a href="">Terms Of Service</a></li>
-              <li><a href="#" class="fa fa-facebook"></a></li>
-              <li><a href="#" class="fa fa-twitter"></a></li>
-              <li><a href="#" class="fa fa-youtube"></a></li>
-            </ul>
-          </div>
+        <div class="domain-tld-grid">
+          <div class="tld-pill"><div class="tld-ext">.com</div><div class="tld-price">from $4.37</div></div>
+          <div class="tld-pill"><div class="tld-ext">.net</div><div class="tld-price">from $7.50</div></div>
+          <div class="tld-pill"><div class="tld-ext">.org</div><div class="tld-price">from $9.99</div></div>
+          <div class="tld-pill"><div class="tld-ext">.info</div><div class="tld-price">from $2.00</div></div>
+          <div class="tld-pill"><div class="tld-ext">.club</div><div class="tld-price">from $5.65</div></div>
+          <div class="tld-pill"><div class="tld-ext">.xyz</div><div class="tld-price">from $1.50</div></div>
         </div>
       </div>
+      <div class="domain-right reveal d2">
+        <h3>Everything for your domain</h3>
+        <ul class="transfer-list">
+          <li>🔄 Easy domain transfers — we handle it all</li>
+          <li>🔒 Free WHOIS privacy protection included</li>
+          <li>📧 Free email forwarding on all domains</li>
+          <li>🌐 500+ domain extensions available</li>
+          <li>🛡️ Domain theft protection built-in</li>
+          <li>📊 Easy DNS management panel</li>
+          <li>⚡ Instant activation after purchase</li>
+          <li>💰 Price lock — no renewal price hikes</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/autochange_text.js"></script>
-    <script src="js/polygonizr.min.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+<!-- SECURITY -->
+<section class="section" id="security">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;max-width:560px;margin:0 auto">
+      <div class="sec-tag">Security &amp; Performance</div>
+      <h2 class="sec-title">Built to keep you safe<br/>and blazing fast</h2>
+      <p class="sec-sub" style="margin:0 auto">Professional-grade protection on every plan — no extras, no upsells.</p>
+    </div>
+    <div class="sec-grid">
+      <div class="sec-card reveal"><div class="sec-card-icon">🔐</div><h4>Free SSL Certificates</h4><p>HTTPS automatically issued and renewed on every website. Boosts trust, SEO, and conversions at zero cost.</p></div>
+      <div class="sec-card reveal d1"><div class="sec-card-icon">🛡️</div><h4>CageFS Isolation</h4><p>Each account runs in its own virtualized filesystem — a breach of one site can never affect another.</p></div>
+      <div class="sec-card reveal d2"><div class="sec-card-icon">⚡</div><h4>DDoS Protection</h4><p>Enterprise-grade protection keeps your site online even during large-scale distributed attacks.</p></div>
+      <div class="sec-card reveal"><div class="sec-card-icon">🔄</div><h4>Daily Backups</h4><p>Automatic daily backups mean you're always one click away from restoring to a clean state.</p></div>
+      <div class="sec-card reveal d1"><div class="sec-card-icon">🧱</div><h4>Custom Firewall</h4><p>Always-on firewall blocks malicious traffic, brute-force attacks, and known vulnerability exploits.</p></div>
+      <div class="sec-card reveal d2"><div class="sec-card-icon">🩺</div><h4>KernelCare Patching</h4><p>Live kernel security patches applied without reboots — your server stays protected and always running.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="cta-inner">
+    <div>
+      <h2>Ready to launch your website?</h2>
+      <p>Join 10,000+ customers. Get started in minutes with our free setup and migration service.</p>
+    </div>
+    <a href="#plans" class="btn-white">Get Started Today →</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="logo">HOST<span>.COM</span></a>
+      <p>Fast, secure, independently owned web hosting. Powering websites since 2016.</p>
+    </div>
+    <div class="footer-col"><h5>Hosting</h5><ul><li><a href="#">Shared Hosting</a></li><li><a href="#">WordPress Hosting</a></li><li><a href="#">VPS Hosting</a></li><li><a href="#">WP Live</a></li><li><a href="#">Website Builder</a></li></ul></div>
+    <div class="footer-col"><h5>Domains</h5><ul><li><a href="#">Search Domains</a></li><li><a href="#">Transfer Domain</a></li><li><a href="#">Premium Domains</a></li><li><a href="#">Domain Privacy</a></li></ul></div>
+    <div class="footer-col"><h5>Security</h5><ul><li><a href="#">SSL Certificates</a></li><li><a href="#">SiteLock</a></li><li><a href="#">DDoS Protection</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About Us</a></li><li><a href="#">Blog</a></li><li><a href="#">Affiliates</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Host.com — All rights reserved.</p>
+    <div class="social-row">
+      <a href="#" class="social-btn">f</a>
+      <a href="#" class="social-btn">𝕏</a>
+      <a href="#" class="social-btn">▶</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
 </html>
